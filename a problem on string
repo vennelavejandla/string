@@ -1,0 +1,11 @@
+a=input()
+x=[]
+for i in range(len(a)):
+  if i%2==0:
+    x.append(a[i])
+y=[]
+for i in range(len(a)):
+  if i%2!=0:
+    y.append(a[i])
+x.extend(y)
+print(*x,sep=" ")
